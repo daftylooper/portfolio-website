@@ -2,10 +2,10 @@
     var ariaExpanded = false;
 </script>
 
-<div class="navbar" aria-expanded={ariaExpanded}>
+<div class="navbar" aria-expanded={ariaExpanded} style="background: #0A192F">
     <div class="nav-top">
         <div class="nav-left-ham">
-            <div class=nav-logo><img src="/pranav_logo.png" alt="logo"></div>
+            <div class=nav-logo><a href="/"><img src="/pranav_logo.png" alt="logo"/></a></div>
         </div>
         <div class="nav-space-ham"></div>
         <div class="nav-right-ham">
@@ -21,27 +21,45 @@
     <div class="nav-bottom" aria-expanded={ariaExpanded}>
     
         <div class="nav-ham-menu">
-            <div>About</div>
-            <div>Experience</div>
-            <div>Blog</div>
-            <div>Contact</div>
-            <div><button class="nav-resume-button">Resume</button></div>
+            <div><button>About</button></div>
+            <div><button>Experience</button></div>
+            <div><a href="/blog">Blog</a></div>
+            <div><button>Contact</button></div>
+            <div class="nav-resume-button"><button>Resume</button></div>
         </div>
     
     </div>
 
     <div class="nav-left">
-        <div class=nav-logo><img src="/pranav_logo.png" alt="logo"></div>
+        <div class=nav-logo><a href="/"><img src="/pranav_logo.png" alt="logo"/></a></div>
     </div>
     <div class="nav-space"></div>
     <div class="nav-right">
-        <div>About</div>
-        <div>Experience</div>
-        <div>Blog</div>
-        <div>Contact</div>
+        <div><button>Experience</button>    </div>
+        <div><a href="/blog" class="blog-href">Blog</a></div>
+        <div><button>Contact</button></div>
         <div><button class="nav-resume-button">Resume</button></div>
     </div>
 </div>
 
 <style>
+    .nav-resume-button{
+        transition: 0.5s;
+        color: rgb(100, 255, 218); 
+        padding: 5px 10px 5px 10px;
+        background: none;
+        border: 1px solid rgb(100, 255, 218);
+        border-radius: 10px; 
+        font-weight: 800;
+    }
+
+    .nav-resume-button:hover{
+        transition: 0.5s;
+        color: rgb(100, 255, 218); 
+        padding: 5px 10px 5px 10px;
+        background: rgb(100, 255, 218, 0.2);
+        border: 1px solid rgb(100, 255, 218);
+        border-radius: 10px; 
+        font-weight: 800;   
+    }
 </style>

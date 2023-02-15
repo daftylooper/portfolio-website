@@ -1,7 +1,11 @@
 <script>
+	import IntroSlide from "$lib/intro-slide.svelte";
+
 </script>
 
-<main></main>
+<main>
+    <IntroSlide/>
+</main>
 
 <style>
     

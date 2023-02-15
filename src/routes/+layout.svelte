@@ -4,7 +4,7 @@
 </script>
 
 <header><Navbar/></header>
-<main><slot></slot></main>
+<main style="background: #0A192F;"><slot></slot></main>
 <footer></footer>
 
 <style>
