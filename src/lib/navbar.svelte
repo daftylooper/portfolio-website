@@ -25,7 +25,7 @@
             <div><button>Experience</button></div>
             <div><a href="/blog">Blog</a></div>
             <div><button>Contact</button></div>
-            <div class="nav-resume-button"><button>Resume</button></div>
+            <div class="nav-resume-button" style="margin-top: 50%; color: rgb(100, 255, 218); border: 1px solid rgb(100, 255, 218)"><button>Resume</button></div>
         </div>
     
     </div>
@@ -61,5 +61,19 @@
         border: 1px solid rgb(100, 255, 218);
         border-radius: 10px; 
         font-weight: 800;   
+    }
+
+    .nav-ham-menu>div>a{
+        text-decoration: none; 
+        color: #5ce1e6;
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    .nav-ham-menu>div>a:clicked{
+        text-decoration: none; 
+        color: #5ce1e6;
+        font-size: 18px;
+        font-weight: 800;
     }
 </style>
